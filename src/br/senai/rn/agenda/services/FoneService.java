@@ -18,6 +18,14 @@ public class FoneService {
 		return false;
 	}
 	
+	public Boolean excluir(Fone fone) {
+		if(ObjectUtils.allNotNull(fone)) {
+			dao.excluir(fone);
+			return true;
+		}
+	return false;
+	}
+	
 	
 	
 }
